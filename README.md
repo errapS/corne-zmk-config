@@ -1,6 +1,6 @@
 ## Layers
 
-![keymap diagram](./img/keymap-img/corne-choc-pro.svg)
+![keymap diagram](./img/keymap-img/corne_choc_pro.svg)
 
 [Keymap-Drawer](https://github.com/caksoylar/keymap-drawer)
 
