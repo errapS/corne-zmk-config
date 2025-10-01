@@ -1,84 +1,129 @@
 layout: {zmk_keyboard: corne_choc_pro, layout_name: default_layout}
 layers:
-  QWERTY: [TAB, Q, W, E, R, T, MUTE, PP, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, LALT, RALT, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ESC, LGUI,
-    NUMBER, SPACE, RET, SYMBOL, RALT]
+  QWERTY:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - MUTE
+  - PP
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - ⌃
+  - A
+  - S
+  - D
+  - F
+  - G
+  - ⎇
+  - ⎇
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - ''''
+  - ⇧
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - /
+  - ESC
+  - ⌘
+  - NUMBER
+  - ⎵
+  - ⏎
+  - SYMBOL
+  - ⎇
   NUMBER:
-  - TAB
+  - ↹
   - '1'
   - '2'
   - '3'
   - '4'
   - '5'
-  - LCTRL
-  - RCTRL
+  - ⌃
+  - ⌃
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
   - BSPC
-  - LCTRL
+  - ⌃
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - LALT
-  - RALT
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - ⎇
+  - ⎇
+  - ←
+  - ↓
+  - ↑
+  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LSHFT
+  - ⇧
   - BT CLR
   - RGB TOG
   - '&sys_reset'
-  - '&bootloader'
-  - '&studio_unlock'
+  - BOOT
+  - UNLOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LGUI
+  - ⌘
   - {type: held}
-  - SPACE
-  - LGUI
+  - ⎵
+  - ⌘
   - {t: ▽, type: trans}
-  - SPACE
+  - ⎵
   SYMBOL:
-  - TAB
+  - ↹
   - '!'
   - '@'
   - '#'
   - $
   - '%'
-  - LCTRL
-  - RCTRL
+  - ⌃
+  - ⌃
   - ^
   - '&'
   - '*'
   - (
   - )
   - BSPC
-  - LCTRL
+  - ⌃
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LALT
-  - RALT
+  - ⎇
+  - ⎇
   - '-'
-  - '='
-  - '['
-  - ']'
+  - {t: '=', s: +}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - \
-  - '`'
-  - LSHFT
+  - {t: '`', s: '~'}
+  - ⇧
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -90,12 +135,12 @@ layers:
   - '}'
   - '|'
   - '~'
-  - LGUI
+  - ⌘
   - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - ⎵
+  - ⏎
   - {type: held}
-  - RALT
+  - ⎇
   EXTRA 1:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
