@@ -15,6 +15,17 @@
 };
 
 / {
+    behaviors {
+        morph: morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH";
+            bindings = <&kp RA(SINGLE_QUOTE)>, <&kp RA(SINGLE_QUOTE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -29,7 +40,7 @@
 
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E     &kp R      &kp T        &trans  &trans  &kp Y      &kp U            &kp I           &kp O    &kp P     &kp DEL
-&kp LCTRL   &kp A  &kp S  &kp D     &kp F      &kp G        &trans  &trans  &kp H      &kp J            &kp K           &kp L    &kp SEMI  &kp SQT
+&kp LCTRL   &kp A  &kp S  &kp D     &kp F      &kp G        &trans  &trans  &kp H      &kp J            &kp K           &kp L    &morph    &kp SQT
 &kp LSHFT   &kp Z  &kp X  &kp C     &kp V      &kp B                        &kp N      &kp M            &kp COMMA       &kp DOT  &kp FSLH  &kp RIGHT_ALT
                           &kp LGUI  &lt 3 TAB  &lt 1 SPACE                  &lt 2 RET  &lt 4 BACKSPACE  &sk LEFT_SHIFT
             >;
@@ -50,10 +61,10 @@
         symb_layer {
             display-name = "SYMBOL";
             bindings = <
-&none  &kp EXCL       &kp QUESTION      &kp LBRC  &kp RBRC  &kp SQT            &trans  &trans  &kp EQUAL  &kp AMPERSAND  &kp PIPE    &kp TILDE  &kp GRAVE  &none
-&none  &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR  &kp RPAR  &kp DOUBLE_QUOTES  &trans  &trans  &kp MINUS  &kp PLUS       &kp ASTRK   &kp PRCNT  &none      &none
-&none  &kp BACKSLASH  &kp SLASH         &kp LBKT  &kp RBKT  &kp HASH                           &kp UNDER  &kp CARET      &kp DOLLAR  &kp RA(W)  &kp RA(Q)  &kp RA(P)
-                                        &none     &none     &none                              &none      &none          &none
+&none  &kp EXCL       &kp QUESTION      &kp LBRC  &kp RBRC  &kp RA(SINGLE_QUOTE)       &trans  &trans  &kp EQUAL  &kp AMPERSAND  &kp PIPE    &kp TILDE  &kp GRAVE    &none
+&none  &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR  &kp RPAR  &kp RA(LS(DOUBLE_QUOTES))  &trans  &trans  &kp MINUS  &kp PLUS       &kp ASTRK   &kp PRCNT  &kp AT_SIGN  &none
+&none  &kp BACKSLASH  &kp SLASH         &kp LBKT  &kp RBKT  &kp HASH                                   &kp UNDER  &kp CARET      &kp DOLLAR  &kp RA(W)  &kp RA(Q)    &kp RA(P)
+                                        &none     &none     &none                                      &none      &none          &none
             >;
         };
 

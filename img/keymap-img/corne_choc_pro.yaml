@@ -27,7 +27,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - {t: AltGr+', s: AltGr+'}
   - ''''
   - ⇧
   - Z
@@ -100,7 +100,7 @@ layers:
   - '?'
   - '{'
   - '}'
-  - ''''
+  - AltGr+'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '=', s: +}
@@ -114,14 +114,14 @@ layers:
   - '>'
   - (
   - )
-  - '@'
+  - AltGr+Sft+@
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '-'
   - +
   - '*'
   - '%'
-  - ''
+  - '"'
   - ''
   - ''
   - {t: \, s: '|'}
