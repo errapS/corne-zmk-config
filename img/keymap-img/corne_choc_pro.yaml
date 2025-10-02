@@ -27,7 +27,7 @@ layers:
   - J
   - K
   - L
-  - {t: AltGr+', s: AltGr+'}
+  - {t: AltGr+', s: AltGr+Sft+'}
   - ''''
   - ⇧
   - Z

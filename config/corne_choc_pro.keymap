@@ -18,8 +18,8 @@
     behaviors {
         morph: morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH";
-            bindings = <&kp RA(SINGLE_QUOTE)>, <&kp RA(SINGLE_QUOTE)>;
+            label = "intl to us SQT";
+            bindings = <&kp RA(SINGLE_QUOTE)>, <&kp RA(LS(SINGLE_QUOTE))>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
